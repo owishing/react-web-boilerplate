@@ -1,0 +1,15 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "scope": "@tkww/*",
+      "message": "Publish packages"
+    }
+  },
+  "packages": [
+    "packages/*",
+    "applications/*"
+  ]
+}
