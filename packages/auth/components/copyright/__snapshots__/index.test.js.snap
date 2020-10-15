@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render right Copyright when no year prop provided. 1`] = `
+<WithStyles(ForwardRef(Typography))
+  align="center"
+  color="textSecondary"
+  variant="body2"
+>
+  Copyright © 
+  <WithStyles(ForwardRef(Link))
+    color="inherit"
+    href="https://www.theknot.com/"
+  >
+    The Knot
+  </WithStyles(ForwardRef(Link))>
+   
+  2020
+  .
+</WithStyles(ForwardRef(Typography))>
+`;
+
+exports[`Render right Copyright when right year prop provided. 1`] = `
+<WithStyles(ForwardRef(Typography))
+  align="center"
+  color="textSecondary"
+  variant="body2"
+>
+  Copyright © 
+  <WithStyles(ForwardRef(Link))
+    color="inherit"
+    href="https://www.theknot.com/"
+  >
+    The Knot
+  </WithStyles(ForwardRef(Link))>
+   
+  2021
+  .
+</WithStyles(ForwardRef(Typography))>
+`;

@@ -1,0 +1,39 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "react-redux": "^7.2.1",
+    "redux-thunk": "^2.3.0",
+    "prop-types": "15.7.2",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@tkww/auth": "1.0.0",
+    "@tkww/dashboard": "1.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "3.4.3",
+    "react-app-rewired": "2.1.6",
+    "react-test-renderer": "16.14.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
