@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const { override, babelInclude } = require('customize-cra');
+const { override, babelInclude, adjustStyleLoaders } = require('customize-cra');
 
 module.exports = (config, env) => {
   return Object.assign(
@@ -11,6 +11,11 @@ module.exports = (config, env) => {
         path.resolve('src'),
         fs.realpathSync('../../packages'),
       ]),
+      adjustStyleLoaders(({ use: [, css] }) => {
+        css.options.modules = {
+          localIdentName: '[local]--[hash:base64:5]',
+        };
+      }),
     )(config, env),
   );
 };
