@@ -10,7 +10,10 @@
     "start.web": "lerna run --scope web start",
     "build.web": "lerna run --scope web build",
     "test": "jest",
-    "lint.fix": "eslint ./packages ./applications/web --fix"
+    "lint": "eslint ./packages ./applications/web",
+    "lint.fix": "eslint ./packages ./applications/web --fix",
+    "stylelint": "stylelint ./packages/**/*.scss ./applications/web/**/*.scss",
+    "stylelint.fix": "stylelint ./packages/**/*.scss ./applications/web/**/*.scss --fix"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
@@ -23,6 +26,16 @@
     "react-dom": "^16.14.0",
     "react-scripts": "^3.4.3",
     "node-sass": "^4.14.1",
+    "stylelint": "13.7.2",
+    "stylelint-scss": "3.18.0",
+    "prettier": "2.1.2",
+    "babel-eslint": "10.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "identity-obj-proxy": "3.0.0",
+    "stylelint-config-standard": "20.0.0",
+    "@babel/plugin-transform-runtime": "7.12.1",
     "@babel/plugin-transform-react-jsx": "^7.10.4"
   },
   "jest": {
@@ -34,6 +47,19 @@
     ],
     "collectCoverageFrom": [
       "packages/**/*.{js,jsx,ts,tsx}"
+    ],
+    "moduleNameMapper":{
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "plugins": [
+      "stylelint-scss"
     ]
   }
 }

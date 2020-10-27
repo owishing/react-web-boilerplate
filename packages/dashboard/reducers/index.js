@@ -1,11 +1,9 @@
-const ACTION_HANDLERS = {
-};
+const ACTION_HANDLERS = {};
 
-const initialState = {
-};
+const initialState = {};
 
 export const dashboardReducer = (state = initialState, action) => {
-    const handler = ACTION_HANDLERS[action.type];
+  const handler = ACTION_HANDLERS[action.type];
 
-    return handler ? handler(state, action) : state;
+  return handler ? handler(state, action) : state;
 };

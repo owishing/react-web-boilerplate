@@ -1,0 +1,8 @@
+export const SHOW_MESSAGE = 'SHOW_MESSAGE';
+export const HIDE_MESSAGE = 'HIDE_MESSAGE';
+export const ERROR_MESSAGE = 'ERROR_MESSAGE';
+export const WARNING_MESSAGE = 'WARNING_MESSAGE';
+export const SUCCESS_MESSAGE = 'SUCCESS_MESSAGE';
+
+export const SHOW_LOADING = 'SHOW_LOADING';
+export const HIDE_LOADING = 'HIDE_LOADING';
