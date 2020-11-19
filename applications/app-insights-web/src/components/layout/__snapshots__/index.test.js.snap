@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render right Layout. 1`] = `
+<div
+  className="layout-container"
+>
+  <WithStyles(ForwardRef(AppBar))
+    position="static"
+  >
+    <WithStyles(ForwardRef(Toolbar))
+      className="tool-bar"
+    >
+      <div>
+        <WithStyles(ForwardRef(IconButton))
+          aria-controls="menu-appbar"
+          aria-haspopup="true"
+          aria-label="account of current user"
+          color="inherit"
+          onClick={[Function]}
+        >
+          <AccountCircleIcon />
+        </WithStyles(ForwardRef(IconButton))>
+        <WithStyles(ForwardRef(Menu))
+          anchorEl={null}
+          anchorOrigin={
+            Object {
+              "horizontal": "right",
+              "vertical": "top",
+            }
+          }
+          id="menu-appbar"
+          keepMounted={true}
+          onClose={[Function]}
+          open={false}
+          transformOrigin={
+            Object {
+              "horizontal": "right",
+              "vertical": "top",
+            }
+          }
+        >
+          <WithStyles(ForwardRef(MenuItem))
+            onClick={[Function]}
+          >
+            Profile
+          </WithStyles(ForwardRef(MenuItem))>
+          <WithStyles(ForwardRef(MenuItem))
+            onClick={[Function]}
+          >
+            My account
+          </WithStyles(ForwardRef(MenuItem))>
+        </WithStyles(ForwardRef(Menu))>
+      </div>
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+  <WithStyles(ForwardRef(Drawer))
+    anchor="left"
+    className="drawer"
+    classes={
+      Object {
+        "paper": "drawer-paper",
+      }
+    }
+    variant="permanent"
+  >
+    <div
+      className="drawer-content-container"
+    >
+      <div
+        className="menu-title"
+      >
+        <div
+          className="site-title"
+        >
+          APP INSIGHT
+        </div>
+        <div>
+          <WithStyles(ForwardRef(Select))
+            classes={
+              Object {
+                "icon": "icon",
+                "select": "select",
+              }
+            }
+            onChange={[Function]}
+            value="TK Planner"
+          >
+            <WithStyles(ForwardRef(MenuItem))
+              value="TK Planner"
+            >
+              TK Planner
+            </WithStyles(ForwardRef(MenuItem))>
+            <WithStyles(ForwardRef(MenuItem))
+              value="TKPro"
+            >
+              TKPro
+            </WithStyles(ForwardRef(MenuItem))>
+          </WithStyles(ForwardRef(Select))>
+        </div>
+        <div>
+          <WithStyles(ForwardRef(Select))
+            classes={
+              Object {
+                "icon": "icon",
+                "select": "select",
+              }
+            }
+            onChange={[Function]}
+            value="Android"
+          >
+            <WithStyles(ForwardRef(MenuItem))
+              value="Android"
+            >
+              Android
+            </WithStyles(ForwardRef(MenuItem))>
+            <WithStyles(ForwardRef(MenuItem))
+              value="iOS"
+            >
+              iOS
+            </WithStyles(ForwardRef(MenuItem))>
+          </WithStyles(ForwardRef(Select))>
+        </div>
+      </div>
+      <div
+        className="menu-item"
+        onClick={[Function]}
+      >
+        <BarChartIcon
+          className="item-icon"
+        />
+        Reports
+      </div>
+      <div
+        className="menu-item"
+        onClick={[Function]}
+      >
+        <StarIcon
+          className="item-icon"
+        />
+        Feedbacks
+      </div>
+      <div
+        className="menu-item"
+        onClick={[Function]}
+      >
+        <SettingsIcon
+          className="item-icon"
+        />
+        Settings
+      </div>
+    </div>
+  </WithStyles(ForwardRef(Drawer))>
+  <main />
+</div>
+`;

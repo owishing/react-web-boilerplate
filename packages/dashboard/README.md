@@ -4,7 +4,7 @@
 
 ## Usage
 
-```
+```javascript
 const dashboard = require('@tkww/dashboard');
 
 // TODO: DEMONSTRATE API

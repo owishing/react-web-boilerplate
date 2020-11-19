@@ -1,11 +1,11 @@
-# `@tkww/auth`
+# `@tkww/feedback`
 
 > TODO: description
 
 ## Usage
 
 ```javascript
-const auth = require('@tkww/auth');
+const feedback = require('@tkww/feedback');
 
 // TODO: DEMONSTRATE API
 ```

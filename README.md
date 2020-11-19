@@ -1,4 +1,4 @@
-# React Web Monorepo Boilerplate
+# app-insights-web
 
 ## Getting started
 

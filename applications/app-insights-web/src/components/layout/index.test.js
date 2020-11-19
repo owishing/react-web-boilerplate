@@ -1,21 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { Login } from '.';
+import { Layout } from '.';
 
 jest.mock('react-redux', () => ({
-  useDispatch: () => jest.fn(),
-}));
-
-jest.mock('react-router-dom', () => ({
-  useHistory: () => jest.fn(),
+  useSelector: () => jest.fn(),
 }));
 
 function shallowRenderWithProps(props = {}) {
-  return shallow(<Login {...props} />);
+  return shallow(<Layout {...props} />);
 }
 
-test('Render right Login.', () => {
+test('Render right Layout.', () => {
   const component = shallowRenderWithProps();
   expect(toJson(component)).toMatchSnapshot();
 });

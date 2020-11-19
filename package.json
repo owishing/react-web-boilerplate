@@ -7,13 +7,13 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --reject-cycles",
-    "start.web": "lerna run --scope web start",
-    "build.web": "lerna run --scope web build",
+    "start.web": "lerna run --scope app-insights-web start",
+    "build.web": "lerna run --scope app-insights-web build",
     "test": "jest",
-    "lint": "eslint ./packages ./applications/web",
-    "lint.fix": "eslint ./packages ./applications/web --fix",
-    "stylelint": "stylelint ./packages/**/*.scss ./applications/web/**/*.scss",
-    "stylelint.fix": "stylelint ./packages/**/*.scss ./applications/web/**/*.scss --fix"
+    "lint": "eslint ./packages ./applications/app-insights-web",
+    "lint.fix": "eslint ./packages ./applications/app-insights-web --fix",
+    "stylelint": "stylelint ./packages/**/*.scss ./applications/app-insights-web/**/*.scss",
+    "stylelint.fix": "stylelint ./packages/**/*.scss ./applications/app-insights-web/**/*.scss --fix"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
@@ -48,7 +48,7 @@
     "collectCoverageFrom": [
       "packages/**/*.{js,jsx,ts,tsx}"
     ],
-    "moduleNameMapper":{
+    "moduleNameMapper": {
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     }
   },
@@ -60,6 +60,19 @@
     "extends": "stylelint-config-standard",
     "plugins": [
       "stylelint-scss"
-    ]
+    ],
+    "rules": {
+      "font-family-no-missing-generic-family-keyword": [
+        true,
+        {
+          "ignoreFontFamilies": [
+            "Roboto-Medium",
+            "Roboto",
+            "TimesNewRomanPS-BoldItalicMT",
+            "TimesNewRomanPS"
+          ]
+        }
+      ]
+    }
   }
 }

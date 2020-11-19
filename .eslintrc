@@ -5,5 +5,6 @@
     "prettier"
   ],
   "parser": "babel-eslint",
-  "plugins": ["prettier"]
+  "plugins": ["prettier"],
+  "ignorePatterns": ["node_modules"]
 }
